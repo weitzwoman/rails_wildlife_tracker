@@ -1,0 +1,9 @@
+<h2>All Animals</h2>
+
+<ul>
+  <% @animals.each do |animal| %>
+    <li><%= link_to animal.name, animal_path(animal) %></li>
+  <% end %>
+</ul>
+
+<%= link_to 'Add an animal', new_animal_path %>

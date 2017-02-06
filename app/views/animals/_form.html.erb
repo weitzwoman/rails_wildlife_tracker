@@ -1,0 +1,8 @@
+<%= render "layouts/errors", :object => @animal %>
+
+<h2>Add an Animal</h2>
+<%= form_for @animal do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.submit %>
+<% end %>
