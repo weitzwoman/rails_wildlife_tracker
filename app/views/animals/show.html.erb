@@ -1,3 +1,9 @@
 <h2> <%=  @animal.name %> </h2>
 
+
+
+<p>  <%= link_to "Edit this Animal file", edit_animal_path(@animal) %></p>
+<p><%= link_to "Delete this Animal", animal_path(@animal),
+                                  :data => {:confirm => "Reaaaally?",
+                                  :method => "delete"} %></p>
 <p> <%= link_to "All animals Page", animals_path %></p>
